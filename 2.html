@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Сайт картатека интепола</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      font-family: sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .layer {
+      display: inline-block;
+      position: relative;
+      background-color: #fff;
+      padding: 15px 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      margin: 0 10px;
+    }
+
+    .layer::before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 20px solid #fff;
+    }
+
+    .layer h1 {
+      font-size: 3em;
+      margin-bottom: 0;
+    }
+
+    .layer h2 {
+      font-size: 2em;
+      margin: 0;
+    }
+
+    .layer h3 {
+      font-size: 1.5em;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="layer">
+      <h1>Сайт</h1>
+      <h2>Картатека</h2>
+      <h3>Интерпола</h3>
+    </div>
+  </div>
+</body>
+</html>
